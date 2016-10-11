@@ -30,12 +30,27 @@
 
 % Use the following documentclass for PDF and to view on computer only
 \documentclass[12pt,a4paper]{report}%{book}
+% text formatting
+% set spacing between lines (διάστιχο)
+\usepackage{setspace}
+\setstretch{1.3}
+% chapter title appearance format 16pt
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+{\bfseries\huge}{\chaptertitlename\space\thechapter}{16pt}{}
+% section title appearance format 14pt
+\titleformat{\section}
+{\bfseries\normalfont\large}{\thesection}{14pt}{}
+% subsection title appearance format 12pt
+\titleformat{\subsection}
+{\normalfont}{\thesubsection}{12pt}{}
 
 % xelatex wants fontspec
 \usepackage{fontspec}
 \usepackage{xltxtra}
 \usepackage{xgreek}
 \setmainfont[Mapping=tex-text]{GFS Didot}
+% package allows to place figures
 \usepackage{graphicx}
 % put images in images path
 \graphicspath{{images/}}
@@ -131,19 +146,6 @@
     \fancyhf{}
     \fancyfoot[R]{\thepage}%
 }
-
-% chapter appearance format
-\usepackage{titlesec}
-\titleformat{\chapter}[display]
-{\bfseries\huge}{\chaptertitlename\space\thechapter}{16pt}{}
-
-% section appearance format
-\titleformat{\section}
-{\bfseries\normalfont\large}{\thesection}{14pt}{}
-
-% subsection appearance format
-\titleformat{\subsection}
-{\normalfont}{\thesubsection}{12pt}{}
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
