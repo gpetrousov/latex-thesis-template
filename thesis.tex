@@ -30,20 +30,28 @@
 
 % Use the following documentclass for PDF and to view on computer only
 \documentclass[12pt,a4paper]{report}%{book}
-% text formatting
+
+% TEXT FORMATTING
 % set spacing between lines (διάστιχο)
 \usepackage{setspace}
-\setstretch{1.3}
-% chapter title appearance format 16pt
+\setstretch{1.5}
+% package to customize chapters, sections and subsections style
 \usepackage{titlesec}
+% chapter title appearance format
 \titleformat{\chapter}[display]
 {\bfseries\huge}{\chaptertitlename\space\thechapter}{16pt}{}
-% section title appearance format 14pt
+% https://www.sharelatex.com/learn/Sections_and_chapters
+\titlespacing{\chapter}{0pc}{1.5ex plus .1ex minus .2ex}{5pc}
+% section title appearance format
 \titleformat{\section}
-{\bfseries\normalfont\large}{\thesection}{14pt}{}
-% subsection title appearance format 12pt
+{\bfseries\large}{\thesection}{14pt}{}
+% subsection title appearance format
 \titleformat{\subsection}
-{\normalfont}{\thesubsection}{12pt}{}
+{\bfseries\normalsize}{\thesubsection}{12pt}{}
+% set margins
+\usepackage{geometry}
+\geometry{left=3cm, right=2cm, top=2.5cm, bottom=2.5cm}
+% text justification is fully-justified by default
 
 % xelatex wants fontspec
 \usepackage{fontspec}
@@ -55,6 +63,18 @@
 % put images in images path
 \graphicspath{{images/}}
 \usepackage{setspace}
+
+% Caption customization
+% use this package to set appearance for captions
+\usepackage{caption}
+% caption size for figures 10pt
+\captionsetup[figure]{font=footnotesize,labelfont=footnotesize}
+% caption size for tables 10pt and underlined
+\usepackage[normalem]{ulem} % Package for underlining
+\DeclareCaptionLabelFormat{label_format}{\uline{#1~#2}} % underline label
+\DeclareCaptionTextFormat{text_format}{\uline{#1}} % underline text
+\DeclareCaptionLabelSeparator{separator_format}{\uline{:~}} % underline separator
+\captionsetup[table]{font=normalsize,labelfont=normalsize,labelformat=label_format,textformat=text_format,labelseparator=separator_format}
 
 % use this package to define custom colors
 \usepackage{xcolor}
@@ -346,7 +366,7 @@ output\_port & : & αριθμός θύρας εξόδου
 
 \begin{algorithm}[h!]
 \SetAlgoLined
-\label{alg:reverse_traversal}
+\caption{Αλγόριθμος επιστροφής στοίβας κόμβων δέντρου.}\label{alg:reverse_traversal}
 \KwResult{stack}
  $theStack = create\_empty\_stack()$\;
  $theQueue = create\_empty\_queue()$\;
@@ -363,7 +383,6 @@ output\_port & : & αριθμός θύρας εξόδου
    }
    theStack.push(root)
  }
- \caption{Αλγόριθμος επιστροφής στοίβας κόμβων δέντρου.}
 \end{algorithm}
 
 
