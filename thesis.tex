@@ -175,6 +175,15 @@
 % Change "List of Algorithms" to "Κατάλογος αλγορίθμων"
 \renewcommand\listalgorithmcfname{Κατάλογος αλγορίθμων}
 
+% package to create and customize appendixes (Παραρτήματα)
+% put appendix title to table of contents (toc)
+% Puts a title (e.g., ‘Appendices’) into the document at the point where the appendices environment is begun (page)
+\usepackage[toc,page]{appendix}
+% change appendix name to Παραρτήματα in table of content
+\renewcommand{\appendixtocname}{Παραρτήματα}
+% change appendix name to Παραρτήματα in page
+\renewcommand{\appendixpagename}{Παραρτήματα}
+
 \begin{document}
 \begin{titlepage}
 \begin{center}
@@ -441,6 +450,10 @@ OUTPUT:
 \end{lstlisting}
 \end{minipage}
 
+\begin{appendices}
+\chapter{Περιορισμοί αρχείου εισόδου}
+Ο περιορισμός του αρχείου εισόδου οφείλεται στο γεγονός..
+\end{appendices}
 
 \bibliographystyle{plain}
 
