@@ -1,6 +1,6 @@
 # latex-thesis-template
 
-Custom Latex thesis template to be used for Greek language.
+Custom Latex thesis template to be used with Greek language.
 
 #### Initial compile:
 
@@ -24,7 +24,7 @@ B: If you DONT change the biblipgraphy file
 
 ## Contributing
 
-This template was created to be  compatible with the rules mentioned here http://arch.icte.uowm.gr/mdasyg/pdfs/writing_diploma_thesis.pdf
+This template was created to be  compatible with the rules defined here http://arch.icte.uowm.gr/mdasyg/pdfs/writing_diploma_thesis.pdf
 
 Contributions are open.
 
