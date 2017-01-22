@@ -11,13 +11,13 @@ Custom Latex thesis template to be used with Greek language.
 
 #### Further compile:
 
-A: If you change the biblipgraphy file
+A: If you change the bibliography file
 
 1. biblatex
 2. xelatex
 3. xelatex
 
-B: If you DONT change the biblipgraphy file
+B: If you DONT change the bibliography file
 
 1. xelatex
 2. xelatex
