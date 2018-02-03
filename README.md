@@ -27,5 +27,3 @@ B: If you DONT change the bibliography file
 This template was created to be  compatible with the rules defined here http://arch.icte.uowm.gr/mdasyg/pdfs/writing_diploma_thesis.pdf
 
 Contributions are open.
-
-#### Consider putting a star if you use this template.
