@@ -22,6 +22,10 @@ B: If you DONT change the bibliography file
 1. xelatex
 2. xelatex
 
+#### Example of produced thesis
+
+http://arch.icte.uowm.gr/mdasyg/thesis/HDL_generator2016/text/HDL_generator_for_arithmetic_circuits_petrousov_dasygenis.pdf
+
 ## Contributing
 
 This template was created to be  compatible with the rules defined here http://arch.icte.uowm.gr/mdasyg/pdfs/writing_diploma_thesis.pdf
