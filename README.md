@@ -24,7 +24,7 @@ B: If you DONT change the bibliography file
 
 #### Example of produced thesis
 
-http://arch.icte.uowm.gr/mdasyg/thesis/HDL_generator2016/text/HDL_generator_for_arithmetic_circuits_petrousov_dasygenis.pdf
+https://www.researchgate.net/publication/314286628_Development_of_a_circuits_generator_for_the_implementation_of_arithmetic_functions_in_hardware_description_language
 
 ## Contributing
 
